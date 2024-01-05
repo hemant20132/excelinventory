@@ -1,0 +1,129 @@
+Tables to be created 
+--------------------------
+1.---------------------
+Purchaser's Name
+Purchaser's Address
+Purchaser's City
+Purchaser's Town
+Purchaser's province
+Purchaser's postal code
+Purchaser's Home Telephone No.
+Business Telephone No.
+Purchaser's Email
+Purchaser's Driver License No.
+Expiry Date
+
+Create table purchaserdata (purchasers_name varchar(50), purchasers_address varchar(50), purchasers_city varchar(30), purchasers_town varchar(30), purchasers_province varchar(30), purchasers_postal_code varchar(30),  
+purchasers_home_telephone_no varchar(30), purchasers_email varchar(30) ,purchasers_driver_licence_no varchar(30), 
+expiry_date date);
+
+2.--------------------------------
+login_user_data
+create table login_user_data (username varchar(50), userpassword varchar(50));
+
+3-----Vehicledata-----------
+
+Year
+Make
+Model
+trim level
+Color
+Stock
+VIN
+Distance Travelled
+Vehicle distance unknown
+Yes No
+Lein against Vehicle if any
+Yes No
+GST/HST Non Registrant ?
+Yes No
+GST/HST Registration No.
+GST/HST payable amount
+Manufacturer' warranty in Service Date
+Delivery Date
+Details of Delivery
+MTO Brand
+Daily Rental
+Yes No
+
+Create table vehicledata (vehicle_Year varchar(4), vehicle_Make varchar(30), vehicle_Model varchar(30), vehicle_trim_level varchar(30), vehicle_color varchar(30),
+vehicle_stock varchar(30), vehicle_VIN varchar(30), vehicle_distance_travelled varchar(30), vehicle_distance_unknown varchar(30), vehicle_lein_against varchar(30),
+vehicle_gsthst_nonregistrant varchar(30),  vehicle_gsthst_registration_no varchar(30), vehicle_gsthst_payable_amount varchar(30), vehicle_manufacturers_warranty_in_service_date date,
+vehicle_delivery_date date, vehicle_details_of_delivery varchar(30), vehicle_MTO_Brand varchar(30), vehicle_daily_rental varchar(30)); 
+
+Invoice No:
+Invoice Date:
+Select Customer:
+Select Vehicle:
+Insurance Information :
+Name of Insurance Policy
+Policy No:
+Expirty Date
+Insurance Agent
+Phone No
+Dealers Guarantee
+Is there any dealer Guaranty on this vehicle ?
+Yes No
+Dealer Guarantee Description
+Comments
+Is there any third party warranty on this vehicle ?
+Yes No
+Retail price if included in selling price ?
+Company
+Third Party Warranty Description
+Terms of Settlement :
+Selling Price
+Administration Fees
+Trade In Allowance
+Licence Fees
+Gasoline
+Payout lien On Trade In
+GSTHST payable on tradein
+
+Deposit Made By
+Cash Cheque Credit Card
+Deposit Amount
+Payable on Delivery
+Insurance
+Life Accident Loss of Inc.
+Insurance Amount
+PST on Insurance
+LIEN Registration Fees
+Balance finaced
+Net Amount to be financed
+Cost of Borrowing
+
+
+Amount of Payments
+Number of Payments
+Payment Starts On
+Credit Approval
+Will dealer or Sales Person receive any incentive for financing this vehicle
+yes No
+Customer has received any non disclosure statment if any
+Manufacturer participates in Canadian Motor Vehicles Arbitration Plan (CAMVAP)
+yes No
+Sales Persons Name
+Registration No
+Dealer's Registration No
+Dealer's Name of Official
+Acceptor's Registration No.
+Acceptor's Title
+Acceptor's Date
+
+Create table invoicedata (invoice_no varchar(20), invoice_date date, customer_name varchar(30), vehicle_name varchar(30), insurance_policy_name varchar(30), 
+insurance_policy_no varchar(30), policy_expiry_date varchar(12), insurance_agent varchar(30), phone_no varchar(30), isdealers_guarantee varchar(10), 
+dealers_guarantee_description varchar(30), comments varchar(30),   isthirdparty_warranty varchar(10), retail_price_if_included_in_selling_price decimal(11,2),
+thirdpartywarranty_company varchar(30), thirdpartywarranty_description varchar(50), 
+selling_price decimal(11,2), administration_fees decimal(11,2), trade_in_allowance decimal(11,2),licence_fees decimal(11,2),gasoline decimal(11,2),
+payoutlein_ontradein decimal(11,2), gsthst_payable_ontradein decimal(11,2),  deposit_made_by varchar(20), deposit_amount decimal(11,2),
+payable_on_delivery decimal(11,2),  life_accident_loss_of_inc decimal(11,2), typeofinsurance varchar(30), insurance_amount decimal(11,2), 
+pst_on_insurance decimal(11,2), lein_registration_fees decimal(11,2), balance_financed decimal(11,2),net_amount_tobe_financed decimal(11,2), 
+cost_of_borrowing decimal(11,2), amount_of_payments decimal(11,2), no_of_payments int, payment_starts_on date,
+credit_approval varchar(10), issales_person_incentive varchar(10),isnondisclosure_statement varchar(10),iscamvap varchar(10), 
+sales_person_name varchar(30), registration_no varchar(30), dealer_registration_no varchar(30), 
+dealers_officials_name varchar(50), acceptors_registration_no varchar(30), acceptors_title varchar(30),  acceptor_date date);  
+  
+  
+
+
